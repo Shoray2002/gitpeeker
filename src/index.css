@@ -132,11 +132,14 @@ a:active {
 @media only screen and (max-width: 425px) {
   /*Small smartphones [325px -> 425px]*/
    h1 {
-    font-size: 30px;
+    font-size: 45px;
   }
+
   .search-box {
     max-width: 200px;
+    
   }
+  .search-box input{font-size: 15px;}
   .results {
     /* transform: scale(0.8); */
     max-width: 250px;
