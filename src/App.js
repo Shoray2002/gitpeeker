@@ -24,6 +24,12 @@ function App() {
 
   return (
     <main>
+      {/* const [progress,setProgress] = useState(0);
+      <LoadingBarn
+        color={barColor}
+        progress={progress}
+        onLoaderFinished={() => setProgress(0)}
+      /> */}
       <div className="App">
         <header>
           <h1>wiki peeker</h1>
@@ -43,14 +49,16 @@ function App() {
         </header>
         <div className="results">
           {results.map((result, i) => {
-            const url = `https://en.wikipedia.org/?curid=${result.pageid}`;
+            const url = `https://en.wikipedia.org/wiki/?curid=${result.pageid}`;
 
             return (
               <div className="result" key={i}>
                 <h3>{result.title}</h3>
                 <p dangerouslySetInnerHTML={{ __html: result.snippet }} />
 
-                <a href={url} target="_black" rel="noreferrer">Read More</a>
+                <a href={url} target="_black" rel="noreferrer">
+                  Read More
+                </a>
               </div>
             );
           })}
