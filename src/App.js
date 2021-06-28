@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 function App() {
   const [search, setSearch] = useState("");
   const [results, setResults] = useState([]);
@@ -21,15 +22,10 @@ function App() {
     setSearchInfo(json.query.searchinfo);
     console.log(results);
   };
-
+const [progress,setProgress] = useState(0);
   return (
     <main>
-      {/* const [progress,setProgress] = useState(0);
-      <LoadingBarn
-        color={barColor}
-        progress={progress}
-        onLoaderFinished={() => setProgress(0)}
-      /> */}
+     
       <div className="App">
         <header>
           <h1>wiki peeker</h1>
