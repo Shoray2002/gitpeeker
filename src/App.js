@@ -30,7 +30,7 @@ function App() {
           <form className="search-box" onSubmit={handleSearch}>
             <input
               type="search"
-              placeholder="Type to look for Wikis..."
+              placeholder="Type here..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />

@@ -40,7 +40,7 @@ h1 {
   border-radius: 16px;
   overflow: hidden;
   width: 100%;
-  max-width: 480px;
+  max-width: 600px;
   transition: 0.4s;
   margin-bottom: 20px;
 }
@@ -59,7 +59,7 @@ h1 {
 }
 
 .results {
-  max-width: 768px;
+  max-width: 700px;
   margin: 0 auto;
 }
 .result {
@@ -104,3 +104,41 @@ a:active {
   transform: translateY(-1px);
 }
 
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    .search-box {
+    max-width: 400px;
+  }
+  .results {
+    /* transform: scale(0.8); */
+    max-width: 450px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  h1 {
+    font-size: 50px;
+  }
+  .search-box {
+    max-width: 350px;
+  }
+  .results {
+    /* transform: scale(0.8); */
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+   h1 {
+    font-size: 30px;
+  }
+  .search-box {
+    max-width: 200px;
+  }
+  .results {
+    /* transform: scale(0.8); */
+    max-width: 250px;
+  }
+}
